@@ -1,1 +1,1 @@
-# aca-devops-training
+# Monorepo for ACA DevOps training
