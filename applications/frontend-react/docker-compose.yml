@@ -5,7 +5,7 @@ services:
     depends_on:
       - example-api
     build:
-      context: ./example-ui
+      context: .
       args:
         - REACT_APP_API_BASE_URL=$CLIENT_API_BASE_URL
     ports:
