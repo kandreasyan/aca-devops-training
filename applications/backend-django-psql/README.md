@@ -1,11 +1,11 @@
 # Django Restful CRUD API with PostgreSQL example
 
-For more detail, please visit:
-> [Django CRUD with PostgreSQL example | Django Rest Framework](https://bezkoder.com/django-postgresql-crud-rest-framework/)
-
-
 ## Running the Application
 
+Install requirments
+```
+pip3 install -r requirments.txt
+```
 Create the DB tables first:
 ```
 python manage.py migrate
