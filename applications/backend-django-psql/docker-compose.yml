@@ -24,7 +24,7 @@ services:
     env_file: ./.env
     ports:
       - $API_LOCAL_PORT:$API_DOCKER_PORT
-    command: python /code/manage.py runserver 0.0.0.0:8000
+    command: "python manage.py runserver 0.0.0.0:${API_DOCKER_PORT}"
     environment:
       - DB_MIGRATE=no
       - DB_HOST=postgres
