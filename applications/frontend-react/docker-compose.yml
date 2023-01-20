@@ -2,13 +2,11 @@ version: '3.8'
 
 services:
   example-ui:
-    depends_on:
-      - example-api
     build:
       context: .
       args:
-        - REACT_APP_API_BASE_URL=$CLIENT_API_BASE_URL
+        - REACT_APP_API_BASE_URL=$REACT_APP_API_BASE_URL
     ports:
-      - $REACT_LOCAL_PORT:$REACT_DOCKER_PORT
+      - $PORT:$PORT
     networks:
       - frontend  
