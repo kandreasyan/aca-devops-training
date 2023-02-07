@@ -1,4 +1,4 @@
-# Node.js Express, Sequelize & PostgreSQL
+# Node.js Express & MongoDB: CRUD Rest APIs
 
 ## Project setup
 ```
