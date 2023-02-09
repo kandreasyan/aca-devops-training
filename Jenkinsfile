@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                echo 'git clone'
+                script {
+                    sh "git clone https://github.com/kandreasyan/aca-devops-training"
+                }
             }
         }
         stage('Test') {
