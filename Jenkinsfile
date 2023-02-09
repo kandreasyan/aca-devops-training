@@ -1,11 +1,13 @@
-pipeline {
-    agent any
+pipeline { 
+    agent {
+        docker { image 'node:16' }
+    }
 
     stages {
         stage('Clone') {
             steps {
                 script {
-                    sh "git clone https://github.com/kandreasyan/aca-devops-training"
+                    sh "node -v"
                 }
             }
         }
