@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 script {
-                    sh "clone"
+                    echo "clone"
                 }
             }
         }
