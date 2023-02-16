@@ -1,13 +1,11 @@
 pipeline { 
-    agent {
-        docker { image 'node:16' }
-    }
+    agent any
 
     stages {
         stage('Clone') {
             steps {
                 script {
-                    sh "node -v"
+                    sh "clone"
                 }
             }
         }
