@@ -43,7 +43,7 @@ pipeline {
             }
             steps {
                 withCredentials([sshUserPrivateKey(credentialsId: "droplet-ssh-key", keyFileVariable: 'KEY_FILE')]) {
-                    sh 'ssh -o StrictHostKeyChecking=no -i ${KEY_FILE} root@${DEV_SERVER_IP} "cd /root/frontend && export IMAGE_TAG=${IMAGE_TAG} && docker compose up -d"'
+                    sh 'ssh -o StrictHostKeyChecking=no -i ${KEY_FILE} root@${DEV_SERVER_IP} "cd /root/frontend && export IMAGE_TAG=${IMAGE_TAG} && docker compose pull && docker compose up -d"'
                 }
             }   
         }
