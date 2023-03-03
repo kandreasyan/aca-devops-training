@@ -22,7 +22,7 @@ class App extends Component {
             </Typography>
             <Link to={"/tutorials"} className={classes.link}>
               <Typography variant="body2">
-                Tutorials
+                Tutorials List
               </Typography>
             </Link>
             <Link to={"/add"} className={classes.link}>
